@@ -1,1 +1,1 @@
-ls | paste -
+ls -m
