@@ -1,0 +1,19 @@
+.menu-container {
+    background-color: aqua;
+    max-width: 200px;
+    max-height: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.menu-container h3 {
+    padding-top: 5px;
+}
+
+.menu-container:hover #items_list {
+    display: block;
+}
+
+#items_list {
+    display: none;
+}

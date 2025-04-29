@@ -1,0 +1,12 @@
+if [ $# -eq 0 ]; then
+	echo "No arugment supplied"
+	exit 1fi
+
+for arg in "$@"
+do 
+	mkdir "ex$arg"
+	echo "Builded ex$arg"
+	echo "By chokunlnwza007xpooplover"
+done
+
+
