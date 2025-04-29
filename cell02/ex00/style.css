@@ -1,0 +1,48 @@
+body {
+    background-color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainclass_container {
+    display: flex;
+    height: 100%; 
+    width: 100%;  
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sub1_container, .sub2_container {
+    padding: 20px;
+    color: aqua;
+    height: 100%; 
+}
+
+.sub1_container {
+    background-color: darkblue;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub2_container {
+    background-color: red;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
