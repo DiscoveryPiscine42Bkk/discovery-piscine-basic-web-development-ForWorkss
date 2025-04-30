@@ -6,10 +6,12 @@ function change_color () {
 
 function getRandoCol() {
     let letters = "0123456789ABCDEF";
-    let col = "#"
+    let col = "#";
+
     for (let i=0; i < 6; i++) {
         col += letters[Math.floor(Math.random() * 16)];
     }
+
     console.log(col);
     return col;
 }
