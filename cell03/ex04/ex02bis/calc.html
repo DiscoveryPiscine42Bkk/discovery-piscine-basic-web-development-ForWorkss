@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <div class="compo_container">
+        <input type="text" id="leftValue" placeholder="Left Value" />
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="rightValue" placeholder="Right Value" />
+        <button id="button">Try me!</button>
+    </div>
+    <script src="calc.js"> </script>
+</body>
+</html>
