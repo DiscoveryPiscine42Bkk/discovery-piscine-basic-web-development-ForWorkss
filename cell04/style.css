@@ -475,15 +475,63 @@ h2 {
 
 /* Media Queries */
 @media (min-width: 900px) {
-    .side_container {
+    .side_container.popout {
         display: flex;
+        width:100%;
+        max-width: 13.5vw;
+    }
+
+    .section_container {
+        margin-left:15%;
+        width: 84.5vw;
+    }
+    
+    .section.home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-right:14%;
+        padding-left:9%;
+    }
+
+    .intro_text {
+        padding-left: 12%;
+    }
+
+    .section.about {
+        display:flex;
+        flex-direction: column;
+        padding-left:10vh;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    .about_description {
+        align-items: center;
+        font-size:30px;
+    }
+    
+    .inner_description_area {
+        padding-left:5vw;
+        font-size:20px;
+    }
+    .inner_description_area p {
+        font-size:30px;
+    }
+    .progress_bar_container {
+        flex-direction: column;
+        margin-bottom: 100px;
     }
 }
 
 @media (max-width: 900px) {
     .section_container {
+        top:0;
+        left:0;
         margin-left: 0;
         width: 100%;
+        z-index: 1000;
     }
     .side_container.popout {
         display: none;
@@ -500,6 +548,9 @@ h2 {
         padding-top: 60px;
         transition: transform 0.3s ease;
     }
+    .side_container.popout.visible {
+        display:flex;
+    }
     .menu-toggle {
         display: block;
         position: fixed;
@@ -512,16 +563,22 @@ h2 {
         cursor: pointer;
     }
 
-    .home_section {
+    .section.home {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding-right:9%;
+        padding-left:8%;
     }
 
-    .home_section .text_container,
-    .home_section .image_container {
-        width: 100%;
+    .intro_text {
+        padding:0;
+        margin-left:5%;
+    }
+
+    .map_container {
+        width:25%;
     }
 
     body, html {
@@ -532,46 +589,76 @@ h2 {
         background-size: cover;
         background-position: center;
     }
-}
 
-@media (max-width: 768px) {
-    .side_container {
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .section_container {
-        margin-left: 0;
-        width: 100%;
-    }
-    .description_about_area {
+    .description_about_area,
+    .progress_bar_container {
         flex-direction: column;
         align-items: center;
-    }
-    .about_image {
-        width: 80%;
-    }
-}
-
-@media (max-width: 600px) {
-    .intro_text h1,
-    .header_text_about {
-        font-size: 26px;
+        margin-left: 0;
     }
 
-    .intro_text p {
-        font-size: 15px;
+    .progress_bar_col {
+        width: 90%;
+        margin-left: 0;
     }
 
-    .about_image {
+    .section.skills {
+        padding-bottom: 15%;
+    }
+
+    .section.contact {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .section.contact {
+        flex-direction: row;
+    }
+
+    .map_container iframe {
+        width: 87.3vw;
+        height: 200px;
+    }
+
+    .home_image {
+        margin-left: 0;
         width: 90%;
     }
-
-    .description_about_area {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
+/* @media (max-width: 900px) {
+    .description_about_area,
+    .progress_bar_container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .progress_bar_col {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .section.skills {
+        padding-bottom: 15%;
+    }
+
+    .section.contact {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .section.contact {
+        flex-direction: row;
+    }
+
+    .map_container iframe {
+        width: 87.3vw;
+        height: 200px;
+    }
+
+    .home_image {
+        margin-left: 0;
+        width: 90%;
+    }
+} */
