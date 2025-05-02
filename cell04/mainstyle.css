@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(93, 93, 93);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.main_container {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(115, 115, 115);
+    width: 60vw;
+    height:50vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.introduction_container {
+    background-color: rgb(94, 94, 94);
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+}
+
+.introduction_container p {
+    font-size: 35px;
+}
+
+.choosing_container {
+    margin-top:30px;
+    display:flex;
+    flex-direction: row;
+    gap:100px;
+}
+
+.button_choosing {
+    width: 20vw;
+    height: 10vh;
+    border-radius:30px;
+    background-color:rgb(94, 94, 94);
+    font-size:20px;
+    text-decoration: underline;
+    cursor:pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.button_choosing:hover {
+    background-color:rgb(129, 129, 129);
+    box-shadow: rgb(174, 174, 174) 1px 0px 5px 5px;
+}
+
+.button_choosing:active {
+    background-color: rgb(168, 168, 168);
+    box-shadow: rgb(202, 202, 202) 1px 0px 5px 5px;
+}
